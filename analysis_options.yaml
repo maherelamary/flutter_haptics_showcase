@@ -1,0 +1,29 @@
+# Same rules as linkdev-flutter-blueprint, so this app reads like a client app.
+include: package:flutter_lints/flutter.yaml
+analyzer:
+  exclude:
+    - build/**
+    - android/**
+    - ios/**
+
+linter:
+  rules:
+    # Style
+    prefer_const_constructors: true
+    prefer_const_declarations: true
+    prefer_const_literals_to_create_immutables: true
+    prefer_final_locals: true
+    prefer_single_quotes: true
+    always_use_package_imports: true
+    avoid_print: true
+
+    # Error prevention
+    avoid_dynamic_calls: true
+    avoid_slow_async_io: true
+    cancel_subscriptions: true
+    close_sinks: true
+
+    # Organisation
+    directives_ordering: true
+    sort_constructors_first: true
+    sort_unnamed_constructors_first: true
